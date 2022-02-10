@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Nunito', sans-serif;
+    border: none;
+}
+
+html, body {
+    height: 100%;
+    background-color: transparent;
+}
+
+/* Posicionando Container no meio da tela */
+.containerOutward {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..\src\background.png) no-repeat;
+}
+
+/* Ajustando o tamanho, a cor e a orientação dos conteúdos dentro do id="Container" */
+#container {
+    width: 284PX;
+    height: 409PX;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+
+    background: #F5EBDC;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Ajustar o tamanho, grossura e cor do h1  */
+#container h1 {
+    color: #5E4848;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Arrumar o posicionamento da logo + h1 */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: auto auto 21px;
+}
+
+/* Ajustar o posicionamento dos elementos do formulário de cadastro */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 0 0 10px;
+    padding: 12px;
+    
+    border-radius: 10px;
+
+    background: #D7CABE;
+    color: #5E4848;
+}
+
+input:hover {
+    border: 1px solid 4AC547;
+    transition: .2s;
+}
+
+.line {
+    width: 207px;
+    height: 0px;
+
+    margin: 10px auto 10px;
+
+    border: 1px solid rgba(44, 44, 44, 0.2);
+}
+
+span, .checkbox {
+    position: static;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+    color: #5E4848;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+
+    background: #D7CABE;
+    border-radius: 50%;
+}
+
+span a{
+    color: #4AC547;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 11px;
+
+    height: 35px;
+
+    background: #4AC547;
+    color: #F5EBDC;
+    border-radius: 5px;
+}
