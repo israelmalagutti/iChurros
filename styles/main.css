@@ -19,13 +19,25 @@ html, body {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..\src\background.png) no-repeat;
+}
+
+.background_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(background.jpg) no-repeat;
+    background-size: cover;
 }
 
 /* Ajustando o tamanho, a cor e a orientação dos conteúdos dentro do id="Container" */
 #container {
-    width: 284PX;
-    height: 409PX;
+    width: 17.75rem;
+    height: 27rem; /* 26rem */
+
+    box-sizing: border-box;
 
     display: flex;
     justify-content: center;
@@ -53,6 +65,11 @@ html, body {
     margin: auto auto 21px;
 }
 
+.logo img {
+    margin-top: 31px;
+    margin-bottom:10px;
+}
+
 /* Ajustar o posicionamento dos elementos do formulário de cadastro */
 .form {
     display: flex;
@@ -66,7 +83,8 @@ form {
 }
 
 input {
-    margin: 0 0 10px;
+    height: 11px;
+    margin-bottom:10px;
     padding: 12px;
     
     border-radius: 10px;
@@ -76,23 +94,22 @@ input {
 }
 
 input:hover {
-    border: 1px solid 4AC547;
-    transition: .2s;
+    border: 1px solid #4AC547;
+    transition: .15s;
 }
 
-.line {
-    width: 207px;
-    height: 0px;
-
-    margin: 10px auto 10px;
-
-    border: 1px solid rgba(44, 44, 44, 0.2);
+.button:hover {
+    color: 5E4848;
+    border: 1px solid #59d657;
 }
 
-span, .checkbox {
-    position: static;
+
+.termos_servicos, .checkbox {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    margin-bottom: .75rem;
 
     font-size: 11px;
     color: #5E4848;
@@ -101,22 +118,36 @@ span, .checkbox {
 .checkbox {
     width: 16px;
     height: 16px;
-
+    padding: 0;
+    margin: 0 6px 0 0;
+    
+    appearance: none;
+    
     background: #D7CABE;
-    border-radius: 50%;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 span a{
     color: #4AC547;
 }
 
-.button {
+.line {
+    height: 0px;
+
+    margin: 0 0 10px;
+
+    border: 1px solid rgba(44, 44, 44, 0.2);
+}
+
+.button_submit {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin-top: 11px;
-
+    
+    margin: 11px 0 41px;
+    
+    
     height: 35px;
 
     background: #4AC547;
