@@ -15,16 +15,13 @@ html, body {
 .containerOutward {
     height: 100%;
 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(background.jpg) no-repeat;
+    background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-}
-
-.background_img {
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(background.jpg) no-repeat;
-    background-size: cover;
 }
 
 /* Ajustando o tamanho, a cor e a orientação dos conteúdos dentro do id="Container" */
