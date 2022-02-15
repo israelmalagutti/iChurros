@@ -27,18 +27,20 @@
                             <h1 class="iChurros">iChurros</h1>
                         </div>
                         
-                        <form action="" method="post">
-                            <div class="form">
-                                    <input type="email" name="email" placeholder="Email" tabindex="1" required>
-                                    <input type="password" name="senha" placeholder="Senha" tabindex="2" required>
-                                    <input type="password" name="confirmar senha" placeholder="Confirmar senha" tabindex="3" required>
+                        <form action="" id="form" > <!-- method="get"-->
+                            <div class="form" id="form-control">
+                                    <input type="email" id="email" name="email" placeholder="Email" tabindex="1">
+                                    <span class="error"></span>
+                                    <input type="password" id="password" minlenght="8" placeholdername="senha" placeholder="Senha" tabindex="2">
+                                    <span class="error"></span>
+                                    <input type="password" id="confirmPassword" name="confirmar senha" placeholder="Confirmar senha" tabindex="3">
+                                    <span class="error"></span>
                 
                                 <div class="termos_servicos">
                                     <input
-                                        class="checkbox"
+                                        id="checkbox"
                                         title="checkbox"
                                         type="checkbox"
-                                        required
                                         tabindex="4"
                                     >
                                     <span>
@@ -49,12 +51,12 @@
                 
                                 <hr class="line">
                 
-                                <button  class="button_submit" type="submit" href="\confirmation.html" tabindex="5">Cadastrar-se</button>
+                                <button  class="button_submit" type="submit" tabindex="5">Cadastrar-se</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <script src=".\main.js"></script>
+            <script src=".\main.js" defer></script>
     </body>
 </html>

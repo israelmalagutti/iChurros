@@ -74,7 +74,7 @@ input:hover {
 }
 
 
-.termos_servicos, .checkbox {
+.termos_servicos, #checkbox {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,7 +85,7 @@ input:hover {
     color: #5E4848;
 }
 
-.checkbox {
+#checkbox {
     width: 16px;
     height: 16px;
     padding: 0;
