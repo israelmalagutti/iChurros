@@ -24,7 +24,7 @@ form.addEventListener("submit", event => {
         }
         
         if(password.length < 8) {   
-            document.getElementById("error").innerHTML = "Este campo precisa ter mais do que 8 caracteres";
+            document.getElementById("error").innerHTML = "Sua senha deve conter mais do que 8 caracteres";
             return false;
         }
         return true;
