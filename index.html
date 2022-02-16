@@ -19,41 +19,42 @@
     </head>
 
     <body>
-            <div class="outwardContainer">
-                <div id="container">
-                    <div class="innerContainer">
-                        <div class="logo">
-                            <img src=".\src\logo.svg" alt="iChurros Logo">
-                            <h1 class="iChurros">iChurros</h1>
-                        </div>
-                        
-                        <form action="" method="post">
-                            <div class="form">
-                                    <input type="email" name="email" placeholder="Email" tabindex="1">
-                                    <input type="password" name="senha" placeholder="Senha" tabindex="2">
-                                    <input type="password" name="confirmar senha" placeholder="Confirmar senha" tabindex="3">
-                
-                                <div class="termos_servicos">
-                                    <input
-                                        class="checkbox"
-                                        title="checkbox"
-                                        type="checkbox"
-                                        tabindex="4"
-                                    >
-                                    <span>
-                                        Li e concordo com os 
-                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Termos de Serviço</a>
-                                    </span>
-                                </div>
-                
-                                <hr class="line">
-                
-                                <button  class="buttonSubmit" type="submit" href="\confirmation.html" tabindex="5">Cadastrar-se</button>
-                            </div>
-                        </form>
+        <div class="containerOutward">
+            <div id="container">
+                <div class="containerInner">
+                    <div class="logo">
+                        <img src=".\src\logo.svg" alt="iChurros Logo">
+                        <h1 class="iChurros">iChurros</h1>
                     </div>
+                    
+                    <form action="" id="form" > <!-- method="get"-->
+                        <div class="form" id="form-control">
+                                <input type="email" id="email" placeholder="Email" tabindex="1">
+                                <input type="password" id="password" minlenght="8" placeholder="Senha" tabindex="2">
+                                <input type="password" id="confirmPassword" placeholder="Confirmar senha" tabindex="3">
+            
+                            <div class="termosServicos">
+                                <input
+                                    id="checkbox"
+                                    title="checkbox"
+                                    type="checkbox"
+                                    tabindex="4"
+                                >
+                                <span>
+                                    Li e concordo com os 
+                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Termos de Serviço</a>
+                                </span>
+                            </div>
+            
+                            <hr class="line">
+                            <span id="error"></span>
+            
+                            <button  class="button_submit" type="submit" tabindex="5">Cadastrar-se</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <script src=".\main.js"></script>
+        </div>
+            <script src=".\main.js" defer></script>
     </body>
 </html>
