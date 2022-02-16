@@ -64,10 +64,6 @@ input:hover {
     transition: .15s;
 }
 
-/*input:invalid {
-    border: 1px solid red;
-}*/
-
 .button_submit:hover {
     background: #248d22;
     transition: .2s;

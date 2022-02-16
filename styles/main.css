@@ -13,7 +13,7 @@ html, body {
 }
 
 /* Posicionando Container no meio da tela */
-.outwardContainer {
+.containerOutward {
     height: 100vh;
 
     background:
