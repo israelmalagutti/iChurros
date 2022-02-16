@@ -66,25 +66,3 @@ form.addEventListener("submit", event => {
     if (!checkboxValidation()) return;
     switchPage();
 })
-
-
-// emailValidation();
-// passwordValidation();
-// passwordMatch();
-// checkboxValidation();
-
-
-// Email Inválido
-//     function customMessage(typeError) {
-//     const messages = {
-//         text: {
-//             valueMissing: "Por favor, preencha este campo"
-//         },
-//         email: {
-//             valueMissing: "Email é obrigatório",
-//             typeMismatch: "Por favor, preencha um email válido"
-//         }
-//     }
-    
-//     return messages[typeError]
-//     }
