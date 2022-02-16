@@ -107,7 +107,7 @@ span a{
 }
 
 span#error {
-    margin: auto;
+    margin: 0 0 auto;
     text-align: center;
     font-size: 11px;
     color: red;

@@ -3,20 +3,16 @@ let error = document.getElementById("error")
 
 form.addEventListener("submit", event => {
     event.preventDefault()
-    //     // Email Inválido
-    //     function customMessage(typeError) {
-    //     const messages = {
-    //         text: {
-    //             valueMissing: "Por favor, preencha este campo"
-    //         },
-    //         email: {
-    //             valueMissing: "Email é obrigatório",
-    //             typeMismatch: "Por favor, preencha um email válido"
-    //         }
-    //     }
-        
-    //     return messages[typeError]
-    //     }
+    document.getElementById("error").innerHTML = "";
+
+    function emailValidation() {
+        const email = document.getElementById("email").value;
+        if (email == "") {
+            document.getElementById("error").innerHTML = "Email é obrigatório!";
+            return false;
+        }
+        return true;
+    }
         
     // Validação da Senha
     function passwordValidation() {  
@@ -30,32 +26,31 @@ form.addEventListener("submit", event => {
         if(password.length < 8) {   
             document.getElementById("error").innerHTML = "Este campo precisa ter mais do que 8 caracteres";
             return false;
-        } else {
-            document.getElementById("error").innerHTML = "";
         }
+        return true;
     }
-    passwordValidation();
     
     //Checar se as senhas são iguais
     function passwordMatch() {
-        const password = document.getElementById("password").value;
+        const password = document.getElementById("password").value; 
         const confirmPassword = document.getElementById("confirmPassword").value;
         
         if( confirmPassword !== password) {
             document.getElementById("error").innerHTML = "As senhas devem ser iguais!";
+            return false;
         }
+        return true;
     }
-    passwordMatch();
         
     // Aviso Checkbox Desmarcada
     function checkboxValidation() {
         let check = document.getElementById("checkbox").checked
         if (check == false) {
             document.getElementById("error").innerHTML = "A checkbox deve estar marcada!";
-            return false
+            return false;
         } 
+        return true;
     }
-    checkboxValidation();
 
     // Em caso de envio bem-sucedido do formulário, a página de confirmação deve ser exibida
     function switchPage() {
@@ -64,5 +59,32 @@ form.addEventListener("submit", event => {
             location.assign("./confirmation.html")
         }
     }
-    switchPage()
+    
+    if (!emailValidation()) return;
+    if (!passwordValidation()) return;
+    if (!passwordMatch()) return;
+    if (!checkboxValidation()) return;
+    switchPage();
 })
+
+
+// emailValidation();
+// passwordValidation();
+// passwordMatch();
+// checkboxValidation();
+
+
+// Email Inválido
+//     function customMessage(typeError) {
+//     const messages = {
+//         text: {
+//             valueMissing: "Por favor, preencha este campo"
+//         },
+//         email: {
+//             valueMissing: "Email é obrigatório",
+//             typeMismatch: "Por favor, preencha um email válido"
+//         }
+//     }
+    
+//     return messages[typeError]
+//     }
